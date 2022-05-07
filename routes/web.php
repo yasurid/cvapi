@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UsersController;
+
+use App\Http\Controllers\UserController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +18,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return ['Laravel' => app()->version()];
 });
+
+//Route::get('users', 'UserController@index');
+
+require __DIR__.'/auth.php';
+
+
