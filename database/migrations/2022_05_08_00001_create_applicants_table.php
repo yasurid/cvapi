@@ -13,16 +13,20 @@ class CreateApplicantsTable extends Migration
      */
     public function up()
     {
-        /*
+
         Schema::create('applicants', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('user_id');
-            $table->string('fullName');
+            $table->string('user_id');
+            $table->string('applicantName');
             $table->string('address');
             $table->string('contactNo');
+            $table->string('email');
+            $table->integer('online_status');
             $table->datetime('dateOfBirth');
+           // $table->timestamp('updated_at');
+
             $table->timestamps();
-        }); */
+        });
     }
 
     /**

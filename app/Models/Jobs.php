@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
-class applicant extends Model
+class Jobs extends Model
 {
     use Notifiable;
 
-    protected $fillable = ['applicantName','address','dateofbirth','contactNo','email','userId'];
-   
+    protected $fillable = ['Title'];
+
     //use HasFactory;
 }
